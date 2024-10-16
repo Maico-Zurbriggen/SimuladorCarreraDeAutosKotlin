@@ -1,5 +1,4 @@
 # Simulador de Carrera de Autos
-fulbo
 ## Objetivo:
 - Implementar un simulador de carreras de autos por equipos usando **conceptos de POO**.
 - Aplicar **Herencia** para los diferentes tipos de autos.
