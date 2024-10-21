@@ -18,8 +18,7 @@ open class VehiculoCustom(
     }
 
     override fun avanzar(){
-        distanciaRecorrida += velocidadActual
-        println("El vehiculo recorrio ${distanciaRecorrida}")
+
     }
 
     override fun frenar() {
