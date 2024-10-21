@@ -22,7 +22,12 @@ open class VehiculoCustom(
     }
 
     override fun frenar() {
+        velocidadActual -= frenado
 
+        if (velocidadActual < 0){
+            velocidadActual = 0
+        }
+        println("La nueva velocidad es $velocidadActual km/h")
     }
 
     override fun toString(): String {
