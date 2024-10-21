@@ -1,4 +1,4 @@
-class VehiculoCustom(
+open class VehiculoCustom(
     nombre: String,
     velocidadMaxima: Int,
     combustible: Int,
