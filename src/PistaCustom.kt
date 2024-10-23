@@ -1,3 +1,5 @@
+import kotlin.random.Random
+
 class PistaCustom(
     longitud: Int,
     clima: String
@@ -7,8 +9,8 @@ class PistaCustom(
     fun aplicarCondiciones(vehiculo: Vehiculo){
 
     }
-    fun cambiarClima(){
-
+    override fun cambiarClima(){
+        clima = climas[Random.nextInt(0, 3)]
     }
     fun aplicarEventoAleatorio(vehiculo: Vehiculo){
 
