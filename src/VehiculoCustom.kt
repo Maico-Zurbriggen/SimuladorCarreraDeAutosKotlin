@@ -17,7 +17,8 @@ open class VehiculoCustom(
         }
     }
 
-    override fun avanzar(){
+    override fun avanzar() {
+        distanciaRecorrida += velocidadActual
 
     }
 
