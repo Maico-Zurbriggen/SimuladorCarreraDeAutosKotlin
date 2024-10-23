@@ -18,7 +18,9 @@ open class VehiculoCustom(
     }
 
     override fun avanzar() {
+        distanciaRecorrida += velocidadActual
 
+        println("El vehiculo recorrio $distanciaRecorrida")
     }
 
     override fun frenar() {
@@ -27,7 +29,8 @@ open class VehiculoCustom(
         if (velocidadActual < 0){
             velocidadActual = 0
         }
-        println("La nueva velocidad es $velocidadActual km/h")
+
+        println("La velocidad actual es $velocidadActual")
     }
 
     override fun toString(): String {
