@@ -3,7 +3,8 @@ open class VehiculoCustom(
     velocidadMaxima: Int,
     combustible: Int,
     aceleracion: Int,
-    frenado: Int
+    frenado: Int,
+    consumo: Int = 1
 ):Vehiculo(nombre, velocidadMaxima, combustible, aceleracion, frenado) {
     override fun acelerar() {
         if (combustible == 0) {
@@ -11,7 +12,7 @@ open class VehiculoCustom(
         }else{
             if ((velocidadActual+aceleracion) <= velocidadMaxima) {
                 velocidadActual += aceleracion
-                combustible-=1
+                combustible-= consumo
                 println("$velocidadActual $combustible\n")
             }
         }
