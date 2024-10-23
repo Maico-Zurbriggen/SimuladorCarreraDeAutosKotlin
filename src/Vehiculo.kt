@@ -9,6 +9,7 @@ abstract class Vehiculo(
     // region Properties
     var velocidadActual: Int = 0
     var distanciaRecorrida: Int = 0
+    val combustiblemax: Int = combustible
     // endregion
 
     // region Abstract function
