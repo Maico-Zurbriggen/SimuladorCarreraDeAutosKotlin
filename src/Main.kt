@@ -1,5 +1,7 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
-    println("Hola!!!")
+    val autoDeportivo = VehiculoCustom("Auto Deportivo", 220, 80, 15, 10)
+
+    autoDeportivo.frenar()
 }
+
+
