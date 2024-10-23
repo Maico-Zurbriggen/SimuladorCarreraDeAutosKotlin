@@ -1,3 +1,4 @@
+import kotlin.random.Random
 class PistaCustom(
     longitud: Int,
     clima: String
@@ -10,7 +11,27 @@ class PistaCustom(
     fun cambiarClima(){
 
     }
-    fun aplicarEventoAleatorio(vehiculo: Vehiculo){
-
+    override fun aplicarEventoAleatorio(vehiculo: Vehiculo){
+        fun pinchazo(){
+            vehiculo.frenar()
+        }
+        fun fallo(){
+            while(vehiculo.velocidadActual > 0){
+                vehiculo.frenar()
+            }
+        }
+        fun gasolina(){
+            if ((vehiculo.combustible + (vehiculo.combustible * 0.2).toInt()) < vehiculo.combustiblemax){
+                vehiculo.combustible += (vehiculo.combustible * 0.2).toInt()
+            }else{
+                vehiculo.combustible = vehiculo.combustiblemax
+            }
+            val nroRandom = Random.nextInt(1,3)
+            when(nroRandom){
+                1 -> gasolina()
+                2 -> fallo()
+                3 -> pinchazo()
+            }
+        }
     }
 }
