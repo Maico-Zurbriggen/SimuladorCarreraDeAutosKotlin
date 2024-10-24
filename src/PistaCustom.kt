@@ -12,10 +12,6 @@ class PistaCustom(
         else if (clima == "soleado"){
             vehiculo.consumo = (vehiculo.consumo + vehiculo.consumo * 0.05).toInt()
         }
-    var climas: ArrayList<String> =arrayListOf("soleado", "lluvia", "niebla", "normal")
-
-    fun aplicarCondiciones(vehiculo: Vehiculo){
-
     }
     override fun cambiarClima(){
         clima = climas[Random.nextInt(0, 3)]
